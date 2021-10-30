@@ -582,7 +582,7 @@ window.onload = () => {
         const result = await response.wait();
         let images=[];
         for(let event of result.events){
-          let tokenId = event.args.tokenId;
+          let tokenId = event.args.tokenId.toString();
           let tokenUri = await ImageContract.tokenURI(tokenId.toNumber());
           let json = atob(tokenUri.substring(29));
           let result = JSON.parse(json);
