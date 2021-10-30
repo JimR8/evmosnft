@@ -580,16 +580,7 @@ window.onload = () => {
           icon: "info",
         });
         const result = await response.wait();
-        let images=[];
-        for(let event of result.events){
-          let tokenId = event.args._tokenId;
-          let tokenUri = await ImageContract.tokenURI(tokenId.toNumber());
-          //let json = atob(tokenUri.substring(29));
-          //let result = JSON.parse(json);
-          images.push(tokenUri);
-        }
-        let html =`<h2>You Minted #${tokenId}</h2>
-        <div><img src="${image}"></div>`;
+        let html =`<h2>You Minted #${tokenId}</h2><div><img src="/images/Evmos_AM.PNG"></div>`;
         $('div#minted').html(html);
         $.toast().reset("all");
         $.toast({
