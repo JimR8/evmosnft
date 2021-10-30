@@ -584,9 +584,9 @@ window.onload = () => {
         for(let event of result.events){
           let tokenId = event.args._tokenId;
           let tokenUri = await ImageContract.tokenURI(tokenId.toNumber());
-          let json = atob(tokenUri.substring(29));
-          let result = JSON.parse(json);
-          images.push(result.image);
+          //let json = atob(tokenUri.substring(29));
+          //let result = JSON.parse(json);
+          images.push(tokenUri);
         }
         let html =`<h2>You Minted #${tokenId}</h2>
         <div><img src="${image}"></div>`;
