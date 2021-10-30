@@ -581,7 +581,8 @@ window.onload = () => {
         });
         const result = await response.wait();
 	let tokenId = result.events[0].args._tokenId.toString();
-        let html ="<h2>You Minted #" + tokenId +"</h2><div><img src='/images/Evmos_AM.PNG'></div>";
+	let txHash = result.TransactionHash;
+        let html ="<h2>You Minted #" + tokenId +"</h2><div><img src='images/Evmos_AM.PNG'></div><div><center><a href='https://evm.evmos.org/tx/"+ txHash +"'> View on Block Explorer</a></center></div>";
         $('div#minted').html(html);
         $.toast().reset("all");
         $.toast({
