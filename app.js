@@ -580,7 +580,7 @@ window.onload = () => {
           icon: "info",
         });
         const result = await response.wait();
-	let tokenId = event.args.tokenId;
+	let tokenId = event.args._tokenId;
         let html ="<h2>You Minted #" + tokenId.toString() +"</h2><div><img src='/images/Evmos_AM.PNG'></div>";
         $('div#minted').html(html);
         $.toast().reset("all");
