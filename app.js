@@ -570,7 +570,7 @@ window.onload = () => {
         const estimateGas = await ImageContract.estimateGas.mint();
         const gasLimit = Math.floor(estimateGas.toNumber() * 2);
 
-        const response = await ImageContract.mint(gasLimit);
+        const response = await ImageContract.mint();
         $.toast({
           heading: "Minting",
           text: "Start to minting！",
