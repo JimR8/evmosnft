@@ -158,9 +158,6 @@ const abi = [
   {
     inputs: [
       {
-        internalType: "uint256",
-        name: "tokenAmount",
-        type: "uint256",
       },
     ],
     name: "mint",
