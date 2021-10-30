@@ -712,7 +712,7 @@ window.onload = () => {
         document.getElementById("mint").innerHTML = "Minting...";
         const signer = await provider.getSigner();
         const account = await signer.getAddress();
-        const inputValue = 1;
+        const inputValue = "1";
         const ImageContract = new ethers.Contract(contractAddress, abi, signer);
         const amountRaw = "0";
         const balanceRaw = await provider.getBalance(account);
