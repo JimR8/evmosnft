@@ -717,7 +717,6 @@ window.onload = () => {
         const amountRaw = ethers.utils.parseUnits(`${price * inputValue}`, 18).toString();
         const balanceRaw = await provider.getBalance(account);
         const balance = ethers.utils.formatUnits(balanceRaw, 18);
-        }
         const estimateGas = await ImageContract.estimateGas.claim(inputValue, {
           value: amountRaw,
         });
@@ -746,7 +745,6 @@ window.onload = () => {
         }
         let html =`<h2>You Minted #${tokenId}</h2>
         <div><img src="${image}"></div>`;
-        }
         $('div#minted').html(html);
         $.toast().reset("all");
         $.toast({
