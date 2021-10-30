@@ -163,7 +163,7 @@ const abi = [
         type: "uint256",
       },
     ],
-    name: "claim",
+    name: "mint",
     outputs: [],
     stateMutability: "payable",
     type: "function",
