@@ -7,11 +7,11 @@ import "https://github.com/0xcert/ethereum-erc721/src/contracts/ownership/ownabl
 contract newNFT is NFTokenMetadata, Ownable {
 
 uint8 public counter;
-string public url = "https://ipfs.io/ipfs/Qmd8CwX63TNUDSFM65WdHFDtPuBKChELJwF6Mb144vJhLH"
+string public url = "https://ipfs.io/ipfs/QmZfok44eQKnXoM49gog4DNgQobKwZqXYUWR3JyagyqtLN"
 
   constructor() {
-    nftName = "Evmos Arsia Mons NFT";
-    nftSymbol = "EAMN";
+    nftName = "Evmos Olympus Mons NFT";
+    nftSymbol = "EOMN";
   }
 
   function mint() external {
