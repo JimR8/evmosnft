@@ -582,7 +582,7 @@ window.onload = () => {
         const result = await response.wait();
 	let tokenId = result.events[0].args._tokenId.toString();
 	let txHash = result.transactionHash;
-        let html ="<center><h2>You Minted NFT #" + tokenId +"</h2><div><h2>Your Evmos Testnet NFT</h2><img src='images/Evmos_AM.PNG'></div><div><a href='https://evm.evmos.org/tx/"+ txHash +"' target='_blank'> View on Block Explorer</a></center></div>";
+        let html ="<center><h2>You Minted NFT #" + tokenId +"</h2><div><h2>Your Evmos Testnet NFT</h2><img src='images/Evmos_OM.PNG'></div><div><a href='https://evm.evmos.org/tx/"+ txHash +"' target='_blank'> View on Block Explorer</a></center></div>";
         $('div#minted').html(html);
         $.toast().reset("all");
         $.toast({
