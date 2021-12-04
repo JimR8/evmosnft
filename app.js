@@ -3,7 +3,7 @@ const chainId = 9000;//test net
 const price = 0;
 let address;
 
-const contractAddress = "0x79C17Cc3274F00F8A1fC50AC055823c19d85b87D";
+const contractAddress = "0xC71bC2A8D19753aC49E29B4f29688006A1F83Ba7";
 const etherscanUrl = "https://evm.evmos.org/tx";
 let provider = null;
 
@@ -509,7 +509,7 @@ window.onload = () => {
                 symbol: "PHOTON",
                 decimals: 18,
               },
-              rpcUrls: ["http://arsiamons.rpc.evmos.org:8545"],
+              rpcUrls: ["https://evmos-evm-rpc.tk"],
               blockExplorerUrls: ["https://evm.evmos.org"],
             },
           ],
@@ -533,7 +533,7 @@ window.onload = () => {
                 symbol: "PHOTON",
                 decimals: 18,
               },
-              rpcUrls: ["http://arsiamons.rpc.evmos.org:8545"],
+              rpcUrls: ["https://evmos-evm-rpc.tk"],
               blockExplorerUrls: ["https://evm.evmos.org"],
             },
           ],
