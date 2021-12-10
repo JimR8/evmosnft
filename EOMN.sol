@@ -6,7 +6,7 @@ import "https://github.com/0xcert/ethereum-erc721/src/contracts/ownership/ownabl
 
 contract newNFT is NFTokenMetadata, Ownable {
 
-uint8 public counter;
+uint256 public counter;
 string public url = "https://ipfs.io/ipfs/QmZfok44eQKnXoM49gog4DNgQobKwZqXYUWR3JyagyqtLN";
 
   constructor() {
